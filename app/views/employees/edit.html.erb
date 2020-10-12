@@ -1,0 +1,12 @@
+<div class="container1" >
+<p>
+<br>
+<h3>Update the Employee information</h3>
+</p>
+<hr>
+
+<%= form_for @employee, url:{action: "update"} do |e| %>
+<%= render partial:"employees/form" , locals:{:f => e} %>
+<%= e.submit 'Update', class: 'btn btn-primary' %>
+<% end %>
+</div>

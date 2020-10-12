@@ -1,0 +1,23 @@
+
+	<p>
+	<%= f.label :Name %>
+	<%= f.text_field :name %>
+	</p>
+
+	<p>
+	<%= f.label :Age %>
+	<%= f.text_field :age %>
+	</p>
+
+	<p>
+	<%= f.label :Gender %>
+	<%= f.radio_button :gender, 'Male' %> Male
+	<%= f.radio_button :gender, 'Female' %> Female
+	</p>
+	<br>
+	<p>
+	<%= f.label :Designation %>
+	<%= f.select(:designation, options_for_select([['Junior associate','Junior associate'],['Associate','Associate'],['Sr.Associate','Sr.Associate'],['Architect','Architect']]),{include_blank: true}) %>
+	</p>
+	
+	
